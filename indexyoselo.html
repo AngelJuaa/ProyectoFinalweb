@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,29 +8,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+
+
 <body>
 
     <!-- Encabezado -->
-    <header class="bg-dark text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img src="imgs/Captura de pantalla 2025-04-19 115207.png" alt="Yo Se Lo Reparo" class="img-fluid"
-                    style="max-height: 50px;">
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-md navbar-dark container">
+          <a class="navbar-brand" href="/indexyoselo.html">
+            <img src="imgs/Captura de pantalla 2025-04-19 115207.png" alt="Yo Se Lo Reparo" class="img-fluid" style="max-height: 50px;">
+          </a>
+      
+          <!-- Botón para colapsar el menú en móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/indexyoselo.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/Yoseloreparo_index.html">Reparaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/contacto">Contrata tu reparación</a>
+              </li>
+            </ul>
+      
+            <!-- Información de contacto al final del nav -->
+            <div class="text-white">
+              <p class="mb-0"><strong>Teléfono:</strong> +52 (55) 8854 6640</p>
             </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="/indexyoselo.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="/Yoseloreparo_index.html">Reparaciones</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="/nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="/contacto">Contrata tu reparación</a></li>
-                </ul>
-            </nav>
-            <div class="contacto">
-                <p class="mb-0"><strong>Teléfono:</strong> +52 (55) 8854 6640</p>
-            </div>
-        </div>
-    </header>
-
+          </div>
+        </nav>
+      </header>
+      
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -76,7 +94,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <a href="" target="_blank" class="d-flex justify-content-center mt-4">
+                        <a href="Albañileria.html" class="d-flex justify-content-center mt-4">
                             <img src="imgs/nilo.ico" class="img-fluid" style="max-width: 50%;" alt="Imagen de Pintura">
                         </a>
                         <div class="card-body text-center">
@@ -86,7 +104,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <a href="" class="d-flex justify-content-center mt-4">
+                        <a href="Cerrajeria.html" class="d-flex justify-content-center mt-4">
                             <img src="imgs/llave.ico" class="img-fluid" style="max-width: 50%;" alt="Imagen de Pintura">
                         </a>
                         <div class="card-body text-center">
@@ -96,7 +114,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <a href="" target="_blank" class="d-flex justify-content-center mt-4">
+                        <a href="Electricistas.html" target="_blank" class="d-flex justify-content-center mt-4">
                             <img src="imgs/ele.ico" class="img-fluid" style="max-width: 50%;" alt="Imagen de Pintura">
                         </a>
                         <div class="card-body text-center">
@@ -166,84 +184,88 @@
         </div> <br>
     </section>
     <!-- TESTIMONIOS -->
-    <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-        <div class="carousel-indicators">
+    <div class="container my-5">
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+          
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Testimonio 1"></button>
+              aria-current="true" aria-label="Testimonio 1"></button>
             <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="1"
-                aria-label="Testimonio 2"></button>
+              aria-label="Testimonio 2"></button>
             <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="2"
-                aria-label="Testimonio 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active bg-success text-white" style="padding: 4rem;">
-                <div class="d-flex flex-column align-items-center justify-content-center h-100 text-center">
-                    <p class="fs-4 fw-bold mb-2">Rodrigo Cárcamo</p>
-                    <p class="fst-italic mb-3">Febrero 2023</p>
-                    <p class="lead mb-0 px-3">Qué excelente este servicio. ¡Les felicito! Me encantó esta experiencia,
-                        facilitan mucho a los usuarios. Son muy buenos. Totalmente recomendado.</p>
-                </div>
+              aria-label="Testimonio 3"></button>
+          </div>
+      
+          <!-- Contenido del carrusel -->
+          <div class="carousel-inner">
+      
+            <div class="carousel-item active bg-success text-white" style="padding: 4rem; min-height: 300px;">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center" style="max-width: 700px; margin: auto;">
+                <p class="fs-4 fw-bold mb-2">Rodrigo Cárcamo</p>
+                <p class="fst-italic mb-3">Febrero 2023</p>
+                <p class="lead mb-0 px-3">Qué excelente este servicio. ¡Les felicito! Me encantó esta experiencia,
+                  facilitan mucho a los usuarios. Son muy buenos. Totalmente recomendado.</p>
+              </div>
             </div>
-
-
-            <div class="carousel-item bg-success text-white" style="padding: 4rem;">
-                <div class="d-flex flex-column align-items-center justify-content-center h-100 text-center">
-                    <p class="fs-4 fw-bold mb-2">María López</p>
-                    <p class="fst-italic mb-3">Marzo 2023</p>
-                    <p class="lead mb-0 px-3">Muy buen trato, llegaron puntuales y solucionaron todo. Estoy feliz con el
-                        servicio. ¡Los volveré a contactar sin dudarlo!</p>
-                </div>
+      
+            <div class="carousel-item bg-success text-white" style="padding: 4rem; min-height: 300px;">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center" style="max-width: 700px; margin: auto;">
+                <p class="fs-4 fw-bold mb-2">María López</p>
+                <p class="fst-italic mb-3">Marzo 2023</p>
+                <p class="lead mb-0 px-3">Muy buen trato, llegaron puntuales y solucionaron todo. Estoy feliz con el
+                  servicio. ¡Los volveré a contactar sin dudarlo!</p>
+              </div>
             </div>
-
-            <div class="carousel-item bg-success text-white" style="padding: 4rem;">
-                <div class="d-flex flex-column align-items-center justify-content-center h-100 text-center">
-                    <p class="fs-4 fw-bold mb-2">Carlos Herrera</p>
-                    <p class="fst-italic mb-3">Abril 2023</p>
-                    <p class="lead mb-0 px-3">Ya confirmé con el inquilino y dice que todo OK. Muchas gracias por la
-                        atención, muy amables y profesionales.</p>
-                </div>
+      
+            <div class="carousel-item bg-success text-white" style="padding: 4rem; min-height: 300px;">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center" style="max-width: 700px; margin: auto;">
+                <p class="fs-4 fw-bold mb-2">Carlos Herrera</p>
+                <p class="fst-italic mb-3">Abril 2023</p>
+                <p class="lead mb-0 px-3">Ya confirmé con el inquilino y dice que todo OK. Muchas gracias por la
+                  atención, muy amables y profesionales.</p>
+              </div>
             </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      
+          </div>
+      
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
             <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
             <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
+          </button>
+      
+        </div>
+      </div>
+      
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
-            <div class="row text-center text-md-start">
-                <div class="col-md-4 mb-3">
-                    <h5>Contacto</h5>
-                    <p>Teléfono: <a href="tel:+525588546640" class="text-white">+52 (55) 8854 6640</a></p>
-                    <p>Hamburgo 115 Local 3, CDMX</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Mapa del Sitio</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Inicio</a></li>
-                        <li><a href="#" class="text-white">Reparaciones</a></li>
-                        <li><a href="#" class="text-white">Nosotros</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Horario</h5>
-                    <p>Lun a Vie: 9:00 - 17:00</p>
-                    <p>Sáb: 9:00 - 13:00</p>
-                </div>
+          <div class="row">
+            <!-- Columna de información -->
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+              <p><strong>Dirección:</strong> Hamburgo 115 Local 3, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX</p>
+              <p><strong>Horario:</strong> Lunes a Viernes: 9:00 AM - 5:00 PM, Sábados: 9:00 AM - 1:00 PM</p>
             </div>
-            <div class="text-center mt-3">
-                <small>&copy; 2025 Yo Se Lo Reparo. Todos los derechos reservados.</small>
+      
+            <!-- Columna de enlaces -->
+            <div class="col-12 col-md-6">
+              <ul class="list-unstyled">
+                <li><a href="/garantia" class="text-white">Garantía</a></li>
+                <li><a href="/terminos" class="text-white">Términos y condiciones</a></li>
+                <li><a href="/privacidad" class="text-white">Privacidad</a></li>
+                <li><a href="/blog" class="text-white">Blog</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-    </footer>
-
+      </footer>
+      
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
